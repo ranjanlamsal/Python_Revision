@@ -54,5 +54,6 @@ x = function2(a,b) #Function is called so print statement is executed . and the 
 print(x)
 
 
-
+print(function1.__doc__)
+'''functionname.__doc__ gives the docstring in that function'''
 
