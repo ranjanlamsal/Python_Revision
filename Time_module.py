@@ -32,7 +32,11 @@ print(time.ctime(0))
 '''.ctime() function gives the moment (date with exact time in readable day date and time format)
  when number of second (since epoch) is passed to it. while passing 0 it gives 1977 jan 1 00:00 
 at gmt 00:00.
-It can be referred as reverse of .time() function'''
+It can be referred as reverse of .time() function
+If no argumnt is passed in ctime() function then by default time.time() is passed 
+'''
+
+
 
 print(time.ctime(time.time()))
 #here time.time() returned the no of seconds passed since epoch till
@@ -137,3 +141,6 @@ named_tuple = time.localtime() # get struct_time
 time_string = time.strftime("%m/%d/%Y, %H:%M:%S", named_tuple)
 
 print(time_string)
+
+print(time.ctime())
+
